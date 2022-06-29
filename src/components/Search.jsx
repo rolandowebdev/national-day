@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-export default function Search() {
-  const [query, setQuery] = useState(''); // Set query for searching data
+export default function Search({ query, setQuery }) {
   return (
     <div className='search-wrapper'>
       <label htmlFor='search-form'>

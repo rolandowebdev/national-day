@@ -1,7 +1,9 @@
 /* eslint-disable array-callback-return */
 import React, { useState, useEffect } from 'react';
-
 import { getList } from './services/listHoliday';
+
+import Search from './components/Search';
+import Card from './components/Card';
 
 function App() {
   const [error, setError] = useState(null); // Set error if data is not defined
@@ -53,28 +55,9 @@ function App() {
 
   return (
     <div className='App'>
-      <h1>Hello React</h1>
-      <div>
-        <span style={{ display: 'block' }} className='sr-only'>
-          Search holiday name here!
-        </span>
-        <label htmlFor='search-form'>
-          <input
-            type='search'
-            name='search-form'
-            id='search-form'
-            placeholder='Search...'
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-          />
-        </label>
-      </div>
-      <ul>
-        {search(holiday).map((day, index) => (
-          <li key={index}>{`${day.holiday_name} ${day.holiday_date}`}</li>
-        ))}
-      </ul>
-      ;
+      <h1>National Day</h1>
+      <Search query={query} setQuery={setQuery} />
+      <Card search={search} holiday={holiday} />
     </div>
   );
 }
