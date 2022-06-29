@@ -1,8 +1,9 @@
 import React from 'react';
+import { Toggle } from '../services/ThemeToggle';
 
 export function Navbar() {
   return (
-    <div className='bg-sky-600 dark:bg-slate-700 sticky top-0'>
+    <div className='bg-red-500 dark:bg-slate-700 sticky top-0 transition-all'>
       <nav className='flex justify-between items-center h-16 max-w-4xl mx-auto'>
         <a className='flex items-center gap-2' href='/'>
           <svg
@@ -30,7 +31,7 @@ export function Navbar() {
           </svg>
           <span className='text-xl font-semibold'>National Day!</span>
         </a>
-        <span>logo</span>
+        <Toggle />
       </nav>
     </div>
   );

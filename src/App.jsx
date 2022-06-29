@@ -57,7 +57,7 @@ function App() {
   }
 
   return (
-    <div className='bg-sky-900 dark:bg-slate-900 text-white min-h-screen'>
+    <div className='bg-red-900 dark:bg-slate-900 text-white min-h-screen transition-all'>
       <Navbar />
       <div className='grid place-items-center py-10 max-w-4xl mx-auto'>
         <div className='flex gap-10 items-start'>
