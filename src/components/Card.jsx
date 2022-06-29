@@ -1,4 +1,5 @@
 import React from 'react';
+import { showFormattedDate } from '../utils/formatDate';
 
 export function Card({ search, holiday }) {
   console.log(holiday);
@@ -16,10 +17,10 @@ export function Card({ search, holiday }) {
         <div className='flex flex-col gap-4 mr-2'>
           {search(holiday)?.map((day, index) => (
             <div className='p-4 text-white rounded-md bg-slate-700' key={index}>
-              <div className='flex items-center gap-3'>
-                <h3>{day.holiday_name}</h3>
-                <span>{day.holiday_date}</span>
-              </div>
+              <h3 className='text-xl'>{day.holiday_name}</h3>
+              <span className='inline-block px-2 py-1 mt-1 text-xs rounded-sm bg-rose-600'>
+                {showFormattedDate(day.holiday_date)}
+              </span>
             </div>
           ))}
         </div>

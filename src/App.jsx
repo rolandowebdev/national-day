@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { getList } from './services/listHoliday';
+import { getList } from './utils/listHoliday';
 
 import { Search } from './components/Search';
 import { Card } from './components/Card';

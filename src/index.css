@@ -22,10 +22,10 @@
   }
   /* Handle */
    ::-webkit-scrollbar-thumb {
-    @apply rounded-md bg-white;
+    @apply rounded-md bg-slate-400;
   }
   /* Handle on hover */
    ::-webkit-scrollbar-thumb:hover {
-    @apply bg-slate-700;
+    @apply bg-slate-500;
   }
 }
