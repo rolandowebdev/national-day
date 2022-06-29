@@ -5,7 +5,7 @@ export function Search({ query, setQuery }) {
     <div className='search-wrapper'>
       <label htmlFor='search-form'>
         <input
-          className='w-full py-2 px-3 bg-red-500 dark:bg-slate-600 rounded-sm placeholder:text-white'
+          className='w-full py-2 px-3 bg-slate-700 rounded-md placeholder:text-white'
           type='text'
           name='search-form'
           id='search-form'

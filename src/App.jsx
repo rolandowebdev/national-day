@@ -57,7 +57,7 @@ function App() {
   }
 
   return (
-    <div className='bg-red-900 dark:bg-slate-900 text-white min-h-screen transition-all'>
+    <div className='bg-gray-100  dark:bg-slate-900 dark:from-slate-700 dark:to-slate-900 min-h-screen transition-all duration-700'>
       <Navbar />
       <div className='grid place-items-center py-10 max-w-4xl mx-auto'>
         <div className='flex gap-10 items-start'>
@@ -68,7 +68,9 @@ function App() {
                 src={IndonesiaFlag}
                 alt='Indonesia Flag'
               />
-              <p className='w-[12ch] text-xl'>Search national day here!</p>
+              <p className='w-[12ch] text-xl text-slate-700 dark:text-white font-semibold transition-all duration-700'>
+                Search National day here!
+              </p>
             </div>
             <Search query={query} setQuery={setQuery} />
           </div>
