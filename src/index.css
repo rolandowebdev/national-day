@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800&display=swap');
+
+/* Set default fonts */
+
+@layer base {
+  body {
+    font-family: 'Jost', sans-serif;
+  }
+}

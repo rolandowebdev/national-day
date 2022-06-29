@@ -6,6 +6,8 @@ import { Card } from './components/Card';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 
+import IndonesiaFlag from './assets/indonesia.png';
+
 function App() {
   const [error, setError] = useState(null); // Set error if data is not defined
   const [isLoaded, setIsLoaded] = useState(false); // Set loading while load data
@@ -55,14 +57,22 @@ function App() {
   }
 
   return (
-    <div className='bg-slate-900'>
+    <div className='bg-sky-900 dark:bg-slate-900 text-white min-h-screen'>
       <Navbar />
-      <div className='grid place-items-center min-h-screen py-10 max-w-4xl my-0 mx-auto'>
-        <div className='flex gap-10'>
-          <div>
+      <div className='grid place-items-center py-10 max-w-4xl mx-auto'>
+        <div className='flex gap-10 items-start'>
+          <div className='flex flex-col gap-8 basis-1/2'>
+            <div className='flex justify-between items-center '>
+              <img
+                className='block w-1/2'
+                src={IndonesiaFlag}
+                alt='Indonesia Flag'
+              />
+              <p className='w-[12ch] text-xl'>Search national day here!</p>
+            </div>
             <Search query={query} setQuery={setQuery} />
           </div>
-          <div>
+          <div className='basis-1/2 overflow-y-auto  max-h-[470px]'>
             <Card search={search} holiday={holiday} />
           </div>
         </div>
