@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Search({ query, setQuery }) {
+export function Search({ query, setQuery }) {
   return (
     <div className='search-wrapper'>
       <label htmlFor='search-form'>

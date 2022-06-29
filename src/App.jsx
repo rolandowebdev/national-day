@@ -1,9 +1,10 @@
-/* eslint-disable array-callback-return */
 import React, { useState, useEffect } from 'react';
 import { getList } from './services/listHoliday';
 
-import Search from './components/Search';
-import Card from './components/Card';
+import { Search } from './components/Search';
+import { Card } from './components/Card';
+import { Navbar } from './components/Navbar';
+import { Footer } from './components/Footer';
 
 function App() {
   const [error, setError] = useState(null); // Set error if data is not defined
@@ -54,10 +55,19 @@ function App() {
   }
 
   return (
-    <div className='App'>
-      <h1>National Day</h1>
-      <Search query={query} setQuery={setQuery} />
-      <Card search={search} holiday={holiday} />
+    <div className='bg-slate-900'>
+      <Navbar />
+      <div className='grid place-items-center min-h-screen py-10 max-w-4xl my-0 mx-auto'>
+        <div className='flex gap-10'>
+          <div>
+            <Search query={query} setQuery={setQuery} />
+          </div>
+          <div>
+            <Card search={search} holiday={holiday} />
+          </div>
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 }
