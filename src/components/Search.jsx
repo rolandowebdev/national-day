@@ -2,18 +2,21 @@ import React from 'react';
 
 export function Search({ query, setQuery }) {
   return (
-    <div className='search-wrapper'>
-      <label htmlFor='search-form'>
-        <input
-          className='w-full py-2 px-3 bg-slate-700 rounded-md placeholder:text-white'
-          type='text'
-          name='search-form'
-          id='search-form'
-          placeholder='Search...'
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-        />
+    <div>
+      <label
+        className='inline-block w-full mb-3 text-center text-slate-700 dark:text-white'
+        htmlFor='search-form'>
+        Search by national day name:
       </label>
+      <input
+        className='w-full px-3 py-2 bg-transparent border-2 rounded-md border-slate-700 dark:border-white dark:placeholder:text-white placeholder:text-slate-700'
+        type='text'
+        name='search-form'
+        id='search-form'
+        placeholder='Search...'
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+      />
     </div>
   );
 }
