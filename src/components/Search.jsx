@@ -2,7 +2,7 @@ import React from 'react';
 
 export function Search({ query, setQuery }) {
   return (
-    <div>
+    <div className='mt-6 lg:mt-24'>
       <label
         className='inline-block w-full mb-3 text-center text-slate-700 dark:text-white'
         htmlFor='search-form'>

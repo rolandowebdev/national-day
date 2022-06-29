@@ -12,4 +12,20 @@
   body {
     font-family: 'Jost', sans-serif;
   }
+  /* width */
+   ::-webkit-scrollbar {
+    width: 0.75rem;
+  }
+  /* Track */
+   ::-webkit-scrollbar-track {
+    @apply bg-slate-700 rounded-md;
+  }
+  /* Handle */
+   ::-webkit-scrollbar-thumb {
+    @apply rounded-md bg-white;
+  }
+  /* Handle on hover */
+   ::-webkit-scrollbar-thumb:hover {
+    @apply bg-slate-700;
+  }
 }

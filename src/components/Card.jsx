@@ -5,7 +5,7 @@ export function Card({ search, holiday }) {
   return (
     <>
       {search(holiday).length === 0 ? (
-        <div className='flex flex-col gap-4 mt-6'>
+        <div className='flex flex-col gap-4 mr-2'>
           <div className='p-4 text-white rounded-md bg-rose-600'>
             <h3 className='text-center'>
               Opppsss... <span>National day is not defined!</span>
@@ -13,7 +13,7 @@ export function Card({ search, holiday }) {
           </div>
         </div>
       ) : (
-        <div className='flex flex-col gap-4 mt-6'>
+        <div className='flex flex-col gap-4 mr-2'>
           {search(holiday)?.map((day, index) => (
             <div className='p-4 text-white rounded-md bg-slate-700' key={index}>
               <div className='flex items-center gap-3'>
