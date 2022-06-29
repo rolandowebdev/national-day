@@ -3,8 +3,8 @@ import { Toggle } from '../services/ThemeToggle';
 
 export function Navbar() {
   return (
-    <div className=' bg-white dark:bg-slate-700 shadow-lg dark:shadow-none shadow-slate-200 sticky top-0 transition-all duration-700'>
-      <nav className='flex justify-between items-center h-16 max-w-4xl mx-auto'>
+    <div className='sticky top-0 transition-all duration-700 shadow-lg bg-white/20 backdrop-blur-lg dark:bg-slate-700/20 dark:shadow-none shadow-slate-200'>
+      <nav className='flex items-center justify-between h-16 max-w-4xl mx-auto'>
         <a className='flex items-center gap-2' href='/'>
           <svg
             width='48'

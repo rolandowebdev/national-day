@@ -9,7 +9,7 @@ export function Search({ query, setQuery }) {
         Search by national day name:
       </label>
       <input
-        className='w-full px-3 py-2 bg-transparent border-2 rounded-md border-slate-700 dark:border-white dark:placeholder:text-white placeholder:text-slate-700'
+        className='w-full px-3 py-2 bg-transparent border-2 rounded-md text-slate-700 dark:text-white border-slate-700 dark:border-white dark:placeholder:text-white placeholder:text-slate-700'
         type='text'
         name='search-form'
         id='search-form'
