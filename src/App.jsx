@@ -49,7 +49,7 @@ function App() {
   }
 
   return (
-    <div className='transition-all duration-700 bg-gray-100 dark:bg-slate-900 dark:from-slate-700 dark:to-slate-900'>
+    <div className='transition-all duration-700 bg-gray-100 dark:bg-[#1b2430] dark:from-slate-700 dark:to-[#1b2430]'>
       <div className='min-h-screen'>
         <Navbar />
         <div className='grid max-w-4xl py-10 mx-auto place-items-center'>

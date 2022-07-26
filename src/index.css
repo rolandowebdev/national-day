@@ -18,7 +18,7 @@
   }
   /* Track */
    ::-webkit-scrollbar-track {
-    @apply bg-slate-700 rounded-md;
+    @apply bg-[#313d4d];
   }
   /* Handle */
    ::-webkit-scrollbar-thumb {
